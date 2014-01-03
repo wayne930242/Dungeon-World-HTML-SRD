@@ -1,0 +1,22 @@
+html {
+   font-size:100%;
+}
+body {
+   padding-top:50px;
+   color: #111111;
+   font-family: 'iABCRegular',Georgia,serif;
+   font-size: 1.3125em;
+   font-style: normal;
+   font-variant: normal;
+   font-weight: normal;
+   line-height: 1.52381em;
+   text-rendering: optimizelegibility;
+}
+
+p {
+    margin: 0 0 1.14286em;
+}
+
+.nav {
+   font-size:60%;
+}
