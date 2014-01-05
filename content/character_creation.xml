@@ -22,7 +22,74 @@ Title: "Character Creation"
 <p class="Example">It looks like I need Intelligence to cast spells, which are my thing, so my 16 goes there. The defy danger option for Dexterity looks like something I might be doing to dive out of the way of a spell, so that gets my 15. A 13 Wisdom will help me notice important details (and maybe keep my sanity, based on the defy danger move). Charisma might be useful in dealing with summoned creatures so I’ll put my 12 there. Living is always nice, so I put my 9 in Constitution for some extra HP. Strength gets the 8.</p>
 <h2>6. Figure Out Modifiers</h2>
 <p class="NoIndent">Next you need to figure out the modifiers for your stats. The modifiers are what you use when a move says +DEX or +CHA. If you’re using the standard character sheets the modifiers are already listed with each score.</p>
-<Center><StatTable xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/" aid:table="table" aid:trows="8" aid:tcols="2"><Cell aid:table="cell" aid:theader="" aid:crows="1" aid:ccols="1" aid:ccolwidth="72"><TableHeader>Score</TableHeader></Cell><TableHeader aid:table="cell" aid:theader="" aid:crows="1" aid:ccols="1" aid:ccolwidth="72"><TableHeader>Modifier</TableHeader></TableHeader><Cell aid:table="cell" aid:crows="1" aid:ccols="1" aid:ccolwidth="72"><TableBody>1–3</TableBody></Cell><Cell aid:table="cell" aid:crows="1" aid:ccols="1" aid:ccolwidth="72"><TableBody>-3</TableBody></Cell><Cell aid:table="cell" aid:crows="1" aid:ccols="1" aid:ccolwidth="72"><TableBody>4–5</TableBody></Cell><TableBody aid:table="cell" aid:crows="1" aid:ccols="1" aid:ccolwidth="72"><TableBody>-2</TableBody></TableBody><Cell aid:table="cell" aid:crows="1" aid:ccols="1" aid:ccolwidth="72"><TableBody>6–8</TableBody></Cell><Cell aid:table="cell" aid:crows="1" aid:ccols="1" aid:ccolwidth="72"><TableBody>-1</TableBody></Cell><Cell aid:table="cell" aid:crows="1" aid:ccols="1" aid:ccolwidth="72"><TableBody>9–12</TableBody></Cell><Cell aid:table="cell" aid:crows="1" aid:ccols="1" aid:ccolwidth="72"><TableBody>0</TableBody></Cell><Cell aid:table="cell" aid:crows="1" aid:ccols="1" aid:ccolwidth="72"><TableBody>13–15</TableBody></Cell><Cell aid:table="cell" aid:crows="1" aid:ccols="1" aid:ccolwidth="72"><TableBody>+1</TableBody></Cell><Cell aid:table="cell" aid:crows="1" aid:ccols="1" aid:ccolwidth="72"><TableBody>16–17</TableBody></Cell><Cell aid:table="cell" aid:crows="1" aid:ccols="1" aid:ccolwidth="72"><TableBody>+2</TableBody></Cell><Cell aid:table="cell" aid:crows="1" aid:ccols="1" aid:ccolwidth="72"><TableBody>18</TableBody></Cell><Cell aid:table="cell" aid:crows="1" aid:ccols="1" aid:ccolwidth="72"><TableBody>+3</TableBody></Cell></StatTable></Center>
+<table class="table">
+   <tbody>
+      <tr>
+        <th>
+          Score
+        </th>
+        <th>
+          Modifier
+        </th>
+      </tr>
+      <tr>
+        <td>
+          1&ndash;3
+        </td>
+        <td>
+          -3
+        </td>
+      </tr>
+      <tr>
+        <td>
+          4&ndash;5
+        </td>
+        <td>
+          -2
+        </td>
+      </tr>
+      <tr>
+        <td>
+          6&ndash;8
+        </td>
+        <td>
+          -1
+        </td>
+      </tr>
+      <tr>
+        <td>
+          9&ndash;12
+        </td>
+        <td>
+          0
+        </td>
+      </tr>
+      <tr>
+        <td>
+          13&ndash;15
+        </td>
+        <td>
+          +1
+        </td>
+      </tr>
+      <tr>
+        <td>
+          16&ndash;17
+        </td>
+        <td>
+          +2
+        </td>
+      </tr>
+      <tr>
+        <td>
+          18
+        </td>
+        <td>
+          +3
+        </td>
+      </tr>
+    </tbody>
+ </table>
 <h2>7. Set Maximum HP</h2>
 <p class="NoIndent">Your maximum HP is equal to your class’s base HP+Constitution score. You start with your maximum HP.</p>
 <p class="Example">Base 4 plus 9 con gives me a whopping 13 HP. </p>
