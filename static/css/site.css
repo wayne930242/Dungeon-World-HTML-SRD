@@ -11,6 +11,30 @@ body {
    text-rendering: optimizelegibility;
 }
 
+nav#sidemenu {
+   position:fixed;
+}
+li.active,
+li.active:hover,
+li.active:focus  {
+    background: #9CF;
+}
+li.active a,
+li.active:hover a,
+li:focus a  {
+    color: #FFF;
+}
+li ul.nav li.active,
+li ul.nav li.active:hover,
+li ul.nav li.active:focus  {
+    background: #7bd;
+}
+li ul.nav li.active a,
+li ul.nav li.active:hover a,
+li ul.nav li:focus a  {
+    color: #FFF;
+}
+
 p {
     margin: 0 0 1.14286em;
     text-indent:1em;

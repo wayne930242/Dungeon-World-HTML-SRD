@@ -15,11 +15,12 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#sidemenu">
    {{ template "chrome/topmenu.html" . }}
     <div class="container">
        <div class="row">
-          <div class="col-md-6 col-md-offset-3">
+            {{ template "chrome/sidemenu.html" . }}
+          <div class="col-md-6 col-md-offset-4">
              {{ .Content }}
           </div>
        </div>
@@ -29,5 +30,23 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{{ $baseurl }}/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      $("#sidemenu-topnav").addClass('currentul');
+      $("#sidemenu").prepend("<h3>Contents</h3>");
+      $("h2").each(function(i) {
+         var current = $(this);
+         current.attr("id", "title" + i);
+         var tag = current.prop("tagName");
+         /*
+         var nexttags = current.nextAll("h1, h2, h3");
+         var nexttag = nexttags.first().prop("tagName");
+         var prevtags = current.prevAll("h1, h2, h3");
+         var prevtag = nexttags.first().prop("tagName");
+         */
+         $("ul.currentul").append("<li class='currentli'><a id='link" + i + "' href='#title" +
+            i + "' title='" + tag + "'>" + 
+            current.html() + "</a></li>");
+      });
+    </script>
   </body>
 </html>
