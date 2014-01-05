@@ -1,9 +1,9 @@
 ---
 Title: "Equipment"
 ---
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Root xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/"><h1>Equipment</h1>
-<Body><p class="NoIndent">The musty tombs and forgotten treasure troves of the world are filled with useful items. The fighter can find a sharp new sword or the thief might stumble across a deadly poison. Most items are mundane—not magical or intrinsically unique in any way. Any item that is magical or one-of-a-kind is not mundane for the purposes of moves. The fighter’s signature weapon is never mundane.</p>
+
+<h1>Equipment</h1>
+<p class="NoIndent">The musty tombs and forgotten treasure troves of the world are filled with useful items. The fighter can find a sharp new sword or the thief might stumble across a deadly poison. Most items are mundane—not magical or intrinsically unique in any way. Any item that is magical or one-of-a-kind is not mundane for the purposes of moves. The fighter’s signature weapon is never mundane.</p>
 <p>Each piece of equipment will have a number of tags. These will tell you something about how the equipment affects the character using it (like +Armor) or suggest something about the way it is used (like the Range tags). Like everything else in Dungeon World, these guide the fiction you’re creating in play. If a weapon is awkward, it might mean that you’re more likely to drop it when you fail that hack and slash roll.</p>
 <p>By no means is this an exhaustive list—feel free to create your own tags.</p>
 <h3>General Equipment Tags</h3>
@@ -261,5 +261,5 @@ Title: "Equipment"
 <p class="MagicItem">Violation Glaive	<span aid:cstyle="Tags">Reach, 2 weight</span></p>
 <p class="NoIndent">A legendary blade, said to have been thrust backwards in time from some grim future, the violation glaive is crafted of strange green iron. The blade strikes at the mind of those it wounds, as well as the body. When you hack and slash on a 10+ you have an additional option: you can deal your normal damage, let them counterattack you, and instill the emotion of your choice (maybe fear, reverence, or trust).</p>
 <p class="MagicItem">Vorpal Sword	<span aid:cstyle="Tags">Close, 3 piercing, 2 weight</span></p>
-<p class="NoIndent">Snicker-snack and all that. Sharp as anything, this simple-seeming sword means to separate one thing from another—the limb from the body or folk from their lives. When you deal damage with the Vorpal Sword, your enemy must choose something (an item, an advantage, a limb) and lose it, permanently.</p></Body>
-</Root>
+<p class="NoIndent">Snicker-snack and all that. Sharp as anything, this simple-seeming sword means to separate one thing from another—the limb from the body or folk from their lives. When you deal damage with the Vorpal Sword, your enemy must choose something (an item, an advantage, a limb) and lose it, permanently.</p>
+
