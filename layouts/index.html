@@ -1,0 +1,66 @@
+{{ $baseurl := .Site.BaseUrl }}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="{{ $baseurl }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ $baseurl }}/css/sticky-footer.css" rel="stylesheet">
+    <link href="{{ $baseurl }}/css/site.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll" data-target="#sidemenu">
+  <div id="wrap">
+   {{ template "chrome/topmenu.html" . }}
+    <div class="container">
+       <div class="row">
+            {{ template "chrome/sidemenu.html" . }}
+          <div class="col-md-6 col-md-offset-4">
+<h1>Dungeon World HTML SRD</h1>
+
+<p><a href="http://www.dungeon-world.com/">Dungeon World</a> is a tabletop roleplaying game by Sage LaTorra and Adam Koebel of Sage Kobold Productions. This document is a System Reference Document (SRD) for that game, prepared in HTML format for reference in a browser.</p>
+
+<p>This site was designed with the help of <a href="http://getbootstrap.com/">Bootstrap</a> and built with <a href="http://hugo.spf13.com/">Hugo</a>. Source: <a href="https://github.com/flyingturtle/Dungeon-World-HTML-SRD">https://github.com/flyingturtle/Dungeon-World-HTML-SRD</a>.</p>
+
+<p>The original source files for Dungeon World (from which the HTML SRD was derived) can be found on GitHub: <a href="https://github.com/Sagelt/Dungeon-World">https://github.com/Sagelt/Dungeon-World</a></p>
+
+<h2 id="license">License</h2>
+
+<p>This site is licensed under the <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a> and the <strong>Open Gaming License</strong>. Please see the <a href="license/">License page</a> for details.</p>
+          </div>
+       </div>
+    </div>
+ </div>
+      {{ template "chrome/footer.html" . }}
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{{ $baseurl }}/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      $("#sidemenu-topnav").addClass('currentul');
+      $("#sidemenu").prepend("<h3>Contents</h3>");
+      $("h2").each(function(i) {
+         var current = $(this);
+         current.attr("id", "title" + i);
+         var tag = current.prop("tagName");
+         /*
+         var nexttags = current.nextAll("h1, h2, h3");
+         var nexttag = nexttags.first().prop("tagName");
+         var prevtags = current.prevAll("h1, h2, h3");
+         var prevtag = nexttags.first().prop("tagName");
+         */
+         $("ul.currentul").append("<li class='currentli'><a id='link" + i + "' href='#title" +
+            i + "' title='" + tag + "'>" + 
+            current.html() + "</a></li>");
+      });
+    </script>
+  </body>
+</html>
