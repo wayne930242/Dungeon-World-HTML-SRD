@@ -12,7 +12,6 @@ body {
 }
 
 nav#sidemenu {
-   position:fixed;
 }
 li.active,
 li.active:hover,
@@ -85,4 +84,11 @@ h3.MonsterName {
 }
 h3.MonsterName span.Tags {
    font-size:70%;
+}
+
+#site-nav {
+   font-size:80%;
+}
+#site-nav input {
+   font-size:80%;
 }
