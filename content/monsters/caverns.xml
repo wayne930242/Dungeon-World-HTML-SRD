@@ -94,7 +94,7 @@ groups: ['monsters']
 <p class="MonsterDescription">The mating call of the otyugh is a horrible, blaring cry that sounds like a cross between an elephant dying and an over-eager vulture. The otyugh spends much of its time partly submerged in filthy water and prefers eating garbage over any other food. As a result, it often grows fat and strong on the offal of orcs, goblins and other cave-dwelling sub-humans. Get too close, however, and you’ll have one of its barbed tentacles dragging you into that soggy, razor-toothed maw. If you get away with your life, best get to a doctor, or your victory may be short lived. <em>Instinct</em>: To befoul</p>
 <ul><li>Infect someone with filth fever</li>
 <li>Fling someone or something</li></ul>
-<p class="MonsterName">Maggot-Squid	<span class="Tags">Horde, Small</span></p>
+<h3 class="MonsterName">Maggot-Squid	<span class="Tags">Horde, Small</span></h3>
 <p class="MonsterStats">Chew (d6 damage), 3 HP, 1 Armor</p>
 <p class="MonsterStats"><span class="Tags">Close</span></p>
 <p class="MonsterQualities"><strong>Special Qualities:</strong> Amphibious, Paralyzing Tentacles</p>
