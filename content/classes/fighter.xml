@@ -128,7 +128,7 @@ Title: "The Fighter"
 <p class="Requirement">Replaces: Scent of Blood</p>
 <p class="NoIndent">When you hack and slash an enemy, your next attack against that same foe deals +1d8 damage.</p>
 <h3 class="MoveName">Multiclass Initiate</h3>
-<p class="Requirement">Required: Multiclass Dabbler</p>
+<p class="Requirement">Requires: Multiclass Dabbler</p>
 <p class="NoIndent">Get one move from another class. Treat your level as one lower for choosing the move.</p>
 <h3 class="MoveName">Steel Hide</h3>
 <p class="Requirement">Replaces: Iron Hide</p>

@@ -115,7 +115,8 @@ Choose one:
 <h3 class="MoveName">World-Talker</h3>
 <p class="Requirement">Requires: Thing-Talker</p>
 <p class="NoIndent">You see the patterns that make up the fabric of the world. You may now apply your spirit tongue, shapeshifter and studied essence moves to pure elements—fire, water, air and earth.</p>
-<h3 class="MoveName">Stalker’s Sister</h3>
+<h3 class="MoveName">Stalker's Sister</h3>
+<p class="Requirement">Requires: Hunter's Brother</h3>
 <p class="NoIndent">Choose one move from the ranger class list.</p>
 <h3 class="MoveName">Formshaper</h3>
 <p class="Requirement">Requires: Formcrafter</p>
