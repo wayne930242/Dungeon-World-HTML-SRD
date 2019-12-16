@@ -1,4 +1,4 @@
-{{ $baseurl := .Site.BaseUrl }}
+{{ $baseurl := .Site.BaseURL }}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -37,7 +37,7 @@
     <script src="{{ $baseurl }}/bootstrap/js/bootstrap.min.js"></script>
     <script>
       $("#sidemenu-topnav").addClass('currentul');
-      $("#sidemenu").prepend("<h3>Contents</h3>");
+      $("#sidemenu").prepend("<h3>目錄</h3>");
       $("h2").each(function(i) {
          var current = $(this);
          current.attr("id", "title" + i);
