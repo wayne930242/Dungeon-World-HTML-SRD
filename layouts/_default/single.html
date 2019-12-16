@@ -38,19 +38,24 @@
     <script>
       $("#sidemenu-topnav").addClass('currentul');
       $("#sidemenu").prepend("<h3>目錄</h3>");
-      $("h2").each(function(i) {
-         var current = $(this);
-         current.attr("id", "title" + i);
-         var tag = current.prop("tagName");
-         /*
-         var nexttags = current.nextAll("h1, h2, h3");
-         var nexttag = nexttags.first().prop("tagName");
-         var prevtags = current.prevAll("h1, h2, h3");
-         var prevtag = nexttags.first().prop("tagName");
-         */
-         $("ul.currentul").append("<li class='currentli'><a id='link" + i + "' href='#title" +
+      $("h2, .MonsterName").each(function(i) {
+          var current = $(this);
+          current.attr("id", "title" + i);
+          var tag = current.prop("tagName");
+          
+          var link_text = current.html();
+          if(current.context.className=="MonsterName"){
+            link_text = link_text.replace(/\<span class=\"Tags\"\>(.*)\<\/span\>/g, "($1)");
+          }
+          /*
+          var nexttags = current.nextAll("h1, h2, h3");
+          var nexttag = nexttags.first().prop("tagName");
+          var prevtags = current.prevAll("h1, h2, h3");
+          var prevtag = nexttags.first().prop("tagName");
+          */
+          $("ul.currentul").append("<li class='currentli'><a id='link" + i + "' href='#title" +
             i + "' title='" + tag + "'>" + 
-            current.html() + "</a></li>");
+            link_text + "</a></li>");
       });
     </script>
   </body>

@@ -1,5 +1,6 @@
 ---
-baseurl: "."
+baseurl: "https://hazmole.github.io/Dungeon-World-HTML-SRD-release"
 title: "地城世界 HTML SRD"
 group: 'groups'
+publishDir: "../Dungeon-World-HTML-SRD-release"
 ---
