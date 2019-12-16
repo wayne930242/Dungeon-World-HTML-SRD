@@ -17,13 +17,12 @@
     <![endif]-->
   </head>
   <body data-spy="scroll" data-target="#sidemenu">
-  {{ template "chrome/topmenu.html" . }}
-  {{ template "chrome/sidemenu.html" . }}
   <div id="wrap">
-    <div class="container" style="height:100%;">
-       <div class="row" style="height:100%;">
-            
-          <div class="col-md-8 col-md-offset-1">
+   {{ template "chrome/topmenu.html" . }}
+    <div class="container">
+       <div class="row">
+            {{ template "chrome/sidemenu.html" . }}
+          <div class="col-md-6 col-md-offset-1">
              {{ .Content }}
           </div>
        </div>
