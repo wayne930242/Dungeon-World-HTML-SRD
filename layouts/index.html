@@ -23,19 +23,19 @@
        <div class="row">
             {{ template "chrome/sidemenu.html" . }}
           <div class="col-md-6 col-md-offset-1">
-<h1>Dungeon World HTML SRD</h1>
+<h1>地城世界 HTML SRD</h1>
 
-<p><a href="http://www.dungeon-world.com/">Dungeon World</a> is a tabletop roleplaying game by Sage LaTorra and Adam Koebel of Sage Kobold Productions. This document is a System Reference Document (SRD) for that game, prepared in HTML format for reference in a browser.</p>
+<p><a href="http://www.dungeon-world.com/">地城世界</a>是一款由《Sage Kobold Productions》公司旗下的Sage LaTorra和Adam Koebel所設計桌上型角色扮演遊戲。這份文件是此遊戲的系統關聯文件(System Reference Document, SRD)，使用HTML的格式編寫，以供瀏覽器閱覽。</p>
 
-<p>This site was designed with the help of <a href="http://getbootstrap.com/">Bootstrap</a> and built with <a href="http://hugo.spf13.com/">Hugo</a>.</p>
+<p>本站係借助了<a href="http://getbootstrap.com/">Bootstrap</a>的設計，並以<a href="https://gohugo.io/">Hugo</a>加以建置而成。</p>
 
-<p>If you'd like to help out with the project (for instance if you see something that needs fixing), please fork us: <a href="https://github.com/acodispo/Dungeon-World-HTML-SRD">https://github.com/acodispo/Dungeon-World-HTML-SRD</a></p>
+<p>若你想要為這個專案貢獻一份心力（比如說你發現了某個可以改良的地方、或是漏掉的翻譯、錯字等），請在 <a href="https://github.com/hazmole/Dungeon-World-HTML-SRD">Github專案</a>上創建一個pull request，或提交到 <a href="https://github.com/acodispo/Dungeon-World-HTML-SRD">原本的專案</a>上</p>
 
-<p>The original source files for Dungeon World (from which the HTML SRD was derived) can be found on GitHub: <a href="https://github.com/Sagelt/Dungeon-World">https://github.com/Sagelt/Dungeon-World</a></p>
+<p>《地城世界》的原始資料文件（衍生出這份HTML SRD文件的原檔）可以在 GitHub上被找到： <a href="https://github.com/Sagelt/Dungeon-World">https://github.com/Sagelt/Dungeon-World</a></p>
 
-<h2 id="license">License</h2>
+<h2 id="license">授權</h2>
 
-<p>This site is licensed under the <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a> and the <strong>Open Gaming License</strong>. Please see the <a href="license/">License page</a> for details.</p>
+<p>本站採用<a href="http://creativecommons.org/licenses/by/3.0/">創用CC 3.0 Unported 授權條款</a>以及<strong>開放遊戲授權(Open Gaming License)</strong>。請參閱<a href="license/">授權頁</a>以瞭解更多細節。</p>
           </div>
        </div>
     </div>
@@ -46,7 +46,7 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{{ $baseurl }}/bootstrap/js/bootstrap.min.js"></script>
-    <script>
+    <!--<script>
       $("#sidemenu-topnav").addClass('currentul');
       $("#sidemenu").prepend("<h3>目錄</h3>");
       $("h2").each(function(i) {
@@ -63,6 +63,6 @@
             i + "' title='" + tag + "'>" + 
             current.html() + "</a></li>");
       });
-    </script>
+    </script>-->
   </body>
 </html>

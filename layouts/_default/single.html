@@ -17,12 +17,13 @@
     <![endif]-->
   </head>
   <body data-spy="scroll" data-target="#sidemenu">
+  {{ template "chrome/topmenu.html" . }}
+  {{ template "chrome/sidemenu.html" . }}
   <div id="wrap">
-   {{ template "chrome/topmenu.html" . }}
-    <div class="container">
-       <div class="row">
-            {{ template "chrome/sidemenu.html" . }}
-          <div class="col-md-6 col-md-offset-1">
+    <div class="container" style="height:100%;">
+       <div class="row" style="height:100%;">
+            
+          <div class="col-md-8 col-md-offset-1">
              {{ .Content }}
           </div>
        </div>
@@ -40,7 +41,7 @@
       $("#sidemenu").prepend("<h3>目錄</h3>");
       $("h2, .MonsterName").each(function(i) {
           var current = $(this);
-          current.attr("id", "title" + i);
+          current.attr("id", "title" + i).addClass('anchor');
           var tag = current.prop("tagName");
           
           var link_text = current.html();
