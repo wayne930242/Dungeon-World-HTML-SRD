@@ -1,6 +1,6 @@
 {{ $baseurl := .Site.BaseURL }}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tw">
   <head>
   <title>{{ .Title }} | {{ .Site.Title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,7 @@
   <div id="wrap">
     <div class="container">
        <div class="row">
-          <div class="col-md-6 col-md-offset-1">
+          <div class="col-md-8 col-md-offset-1">
              {{ .Content }}
           </div>
        </div>
@@ -45,7 +45,7 @@
           
           var link_text = current.html();
           if(current.context.className=="MonsterName"){
-            link_text = link_text.replace(/\<span class=\"Tags\"\>(.*)\<\/span\>/g, "($1)");
+            link_text = link_text.replace(/\<span class=\"Tags\"\>.*\<\/span\>/g, "");
           }
 
           if(tag=="H2" || tag=="H3"){
