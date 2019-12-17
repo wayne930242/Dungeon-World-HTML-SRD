@@ -17,11 +17,11 @@
     <![endif]-->
   </head>
   <body data-spy="scroll" data-target="#sidemenu">
+  {{ template "chrome/topmenu.html" . }}
+  {{ template "chrome/sidemenu.html" . }}
   <div id="wrap">
-   {{ template "chrome/topmenu.html" . }}
     <div class="container">
        <div class="row">
-            {{ template "chrome/sidemenu.html" . }}
           <div class="col-md-6 col-md-offset-1">
              {{ .Content }}
           </div>
@@ -38,14 +38,18 @@
     <script>
       $("#sidemenu-topnav").addClass('currentul');
       $("#sidemenu").prepend("<h3>目錄</h3>");
-      $("h2, .MonsterName").each(function(i) {
+      $("h2, h1, .MonsterName").each(function(i) {
           var current = $(this);
-          current.attr("id", "title" + i).addClass('anchor');
+          current.attr("id", "title" + i);
           var tag = current.prop("tagName");
           
           var link_text = current.html();
           if(current.context.className=="MonsterName"){
             link_text = link_text.replace(/\<span class=\"Tags\"\>(.*)\<\/span\>/g, "($1)");
+          }
+
+          if(tag=="H2" || tag=="H3"){
+            link_text = " - "+link_text;
           }
           /*
           var nexttags = current.nextAll("h1, h2, h3");
@@ -53,6 +57,8 @@
           var prevtags = current.prevAll("h1, h2, h3");
           var prevtag = nexttags.first().prop("tagName");
           */
+          current.addClass('anchor');
+
           $("ul.currentul").append("<li class='currentli'><a id='link" + i + "' href='#title" +
             i + "' title='" + tag + "'>" + 
             link_text + "</a></li>");
